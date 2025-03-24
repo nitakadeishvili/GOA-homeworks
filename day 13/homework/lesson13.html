@@ -1,0 +1,45 @@
+<!--2) ახსენით დეტალურად თითეული ატრიბუტი: name, value, required-->
+<!-- name- გამოიყენება <input>,<select> და სხვა ფორმის ელემენტებთან. სერვერი იღებს მონაცემებს იმ სახელით რასაც დავწერთ name ატრიბუტთან.
+    value-გამოიყენება <input>,<option> და სხვა ელემენტებთან. აჩვენებს ელემენტის საწყისს (default) მნიშვნელობას. required-გამოიყენება <input>, <select> და სხვა ელემენტებთან.ეს ველი არ შეიძლება დარჩეს ცარიელი, ბრაუზერი ამოწმებს ამ ველს ფორმის გაგზავნისას. საბოლოოდ: name-სახელი ელემენტისთვის, value-ელემენტის საწყისი ან დაბრუნებული მნიშვნელობა, required-სავალდებულო შესავსები ველი. -->
+
+<!--3) შექმენით ფორმა ყველა კარგი პრაქტიკის დაცვით, ისე თითქმოს ინფორმაციას მონაცემთა ბაზაში აგზავნიდეთ (name, value, required), რომელშიც უნდა იყოს შემდეგი შესატანი ველები:Full Name (text input, required)
+Email (email input, required)
+Age (number input, required)
+City (text input, required)
+Gender (radio buttons: Male, Female, Other, required)
+Hobbies (checkboxes: Reading, Sports, Music, required at least one)
+Submit Button-->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+        <label for="full_name"> Full Name</label>
+        <input id="full_name" type="text" > <br> 
+        <label for="email">Email</label>
+        <input id="email" type="email" > <br>
+        <label for="age">Age</label>
+        <input id="age" type="number" >
+
+        <label for="City">City</label>
+        <input id="City" type="number" >
+        <p>Gender:</p>
+        <input id="Gender" type="radio" >
+        <label for="Gender">Male</label>
+        <input id="Gender2" type="radio"> 
+        <label for="gender2">Female</label> <br>
+        <p> Hobbies:</p>
+        <input id="sports" type="checkbox">
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="hobbies" value="Sports" id="sports" >
+        <label for="Music">Music</label> <br>
+        <input type="checkbox" value="music" name="music" >
+        <label for="reading">Reading</label><br>
+        
+        <input id="submit" type="submit">
+        
+    </form>
+    </body>
+</html>
