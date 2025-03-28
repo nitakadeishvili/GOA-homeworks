@@ -17,6 +17,9 @@ for number31 in range (31):
 
 for number80 in range (15,80):
     print(number80)
+#8) for ციკლის საშვალებით გამოიტანეთ რიცხვები 0-იდან 64-ის ჩათვლით
+for number64 in range (65):
+    print(number64)
 
 
 
