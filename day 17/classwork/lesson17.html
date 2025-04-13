@@ -1,0 +1,67 @@
+<!--1) დაამატეთ ეს ვიდეო თქვენს საიტზე, ან ნებისმიერი თქვენთვის სასურველი ვიდეო-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <video src = "5_Second_Countdown_HD.mp4" controls >
+
+        </video>
+    </body>
+</html>
+<!--2) დაამატეთ ვიდეო საიტზე სწორი გზით, video თეგში შექმენით მინიმუმ 4 source თეგი და წყაროდ მიუთითეთ 4 სხვადსხვა ტიპის ვიდეო, ასევე type ატრბიუტშიც ჩაწერეთ ამ ვიდეოების ტიპი შესაბამისად. ვიდეოს სხვა ფორმატში მისაღებად გამოიყენეთ cloudconvert-->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <video controls>
+            <source src="5_Second_Countdown_HD.mp4" type = "video/mp4">
+            <source src="5_Second_Countdown_HD.wmv" type = "video/wmv">
+            <source src="5_Second_Countdown_HD.webm" type="video/webm">
+            <source src="5_Second_Countdown_HD.flv" type="video/flv">
+
+        </video>
+    </body>
+</html>
+
+<!--3) საიტზე დაამატეთ audio ელემენტი სწორი გზით, მინიმუმ 3 ფორმატი (არაა უცილებელი სხვადასხვა აუდიო ფაილები ფორმალურად შეცვალეთ type ატრიბუტი) საბოლოოდ დაამატეთ ტექსტი იმ შემთხვევისთვის თუ არცერთი თქვენი აუდიო ფაილი არ იქნება მხარდაჭერილი-->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <audio controls>
+            <source src="audio.ogg" type = "audio/ogg">
+            <source src= "audio.wav" type = "audio/wav">
+            <source src="audio.mp3" type="audio/mp3">
+        Audio not supported
+        </audio>
+    </body>
+</html>
+
+
+<!--4) შექმენით მარტივი სტრუქტურის ვეგბერდი, რომელზეც იქნება მულტი-მედია ელემენტები: ვიდეო & აუდიო. ორივე მედია ელემენტს უნდა ჰქონდეს მარტვის ატრიბუტები: loop, autoplay, muted-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <video autoplay controls>
+            <source src="5_Second_Countdown_HD.mp4" type="video/mp4">
+            <source src="5_Second_Countdown_HD.webm" type="video/webm">
+            <source src="5_Second_Countdown_HD.wmv" type="video/wmv">
+            Video is not supported
+        </video>
+        <audio muted controls>
+            <source src="audio.ogg" type="audio/ogg">
+            <source src="audio.wav" type="audio/wav">
+            <source src="audio mp3" type="audio/mp3">
+            Audio is not supported
+        </audio>
+
+    </body>
+</html>
+
