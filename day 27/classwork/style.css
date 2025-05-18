@@ -1,0 +1,32 @@
+
+
+header {
+    background-color:red;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+
+  p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  
+
+  button {
+    background-color:green;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px;
+  }
+  
+  button {
+    background-color: purple;
+  }
+  

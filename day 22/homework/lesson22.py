@@ -46,12 +46,30 @@ print(selected_numbers)
 
 celestial_bodies = ["მზის სისტემა", "მთვარე", "მარსი", "ვენერა", "იუპიტერი", "სატურნი", "პლუტონი"]
 
-even_index_bodies = [celestial_bodies[i] for i in range(len(celestial_bodies)) if i % 2 == 0]
+for index, body in enumerate(celestial_bodies):
+    if index % 2 == 0:
+        print(body)
+        
 
-print(even_index_bodies)
+#შექმენით სია 0-დან 15-მდე რიცხვებით. გამოიტანეთ მხოლოდ ის რიცხვები, რომლებიც კენტ ინდექსებზე დგანან
+
+numbers = list(range(16))
+odds = numbers[1::2]
+
+print(odds)
+
+#9) შექმენით string რომელშიც შეინახავთ თქვენს სახელსა და გვარს, შემდეგ ცალ ცალკე გამოიტანეთ ამ სტრინგიდან ჯერ სახელი და შემდეგ გვარი slicing-ის საშვალებით
+
+full_name = "Nita Kadeishvili"
 
 
+first_name = full_name[0:4]
 
+
+last_name = full_name[5:]
+
+print("სახელი:", first_name)
+print("გვარი:", last_name)
 
 
 

@@ -1,0 +1,76 @@
+<!-- შექმენი HTML ფაილი სახელად schedule.html სადაც გამოიყენებ internal სტილებს style თეგის საშუალებით head ნაწილში ვებგვერდზე დაამატე სათაური h1 ტექსტით ჩემი დღის განრიგი და unordered list სამი ან მეტი ელემენტით li მაგალითად გაღვიძება სწავლა თამაშის დრო სტილების შიგნით გაასტილე სათაური ლურჯ ფრად და ცენტრში color text-align სიის ელემენტებს მიანიჭე მწვანე ფერი არ გამოიყენო არც inline და არც external სტილები მხოლოდ internal-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>ჩემი დღის განრიგი</title>
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+
+        li {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <h1>ჩემი დღის განრიგი</h1>
+
+    <ul>
+        <li>გაღვიძება</li>
+        <li>სწავლა</li>
+        <li>თამაშის დრო</li>
+    </ul>
+
+</body>
+</html>
+
+
+<!--interal css-ში 1 წესის საშვალებით გასტილეთ 2 h1 და h2 ვებგვერდზე, ასევე მეორე წესის საშვალებით გასტილეთ div-ში არსებული ყველა პარაგრაფი, მინმიუმ მიანიჭეთ color და background-color შეეცადეთ გამოიყენოთ ყველა კუთვნილება. კომენტარებით ახსენით თუ რა არის CSS-ის წესი-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal CSS მაგალითი</title>
+
+    <style>
+        
+        h1, h2 {
+            color: navy;               
+            background-color: white; 
+            text-align: center;
+            padding: 10px;            
+            border-radius: 10px;       
+        }
+
+        div p {
+            color: darkgreen;          
+            background-color: white; 
+            font-size: 16px;           
+            padding: 8px;             
+            margin-bottom: 10px;       
+            border: 1px solid green;   
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>სათაური H1</h1>
+    <h2>სათაური H2</h2>
+
+    <div>
+        <p>First paragrpah in div.</p>
+        <p>Second paragraoh</p>
+        <p>Third paragraph</p>
+    </div>
+
+</body>
+</html>
+
