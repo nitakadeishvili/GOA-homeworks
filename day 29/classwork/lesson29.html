@@ -1,0 +1,149 @@
+<!--1) შექმენით h1, p, button, img და შემდეგ გასტილეთ internal css-ის გზით: თითოეულ ელემენტს შეუცვალეთ სტილი css-ის წესების გამოყენებით. CSS-ის სინტაქსი ახსენით კომენტარებით.
+
+ /* CSS  COMMENT */-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* h1 ელემენტის სტილი */
+     h1 {
+      color: darkblue;           /* ტექსტის ფერი,დეკლარაცია */
+      font-size: 38px;  
+     }
+
+      p {
+      color: black;            
+      font-family: Arial, sans-serif;
+      }
+
+      button {
+      background-color: green;   /* ღილაკის ფონის ფერი */
+      color: white;              
+      padding: 10px 20px;  
+      }
+
+      img {
+      width: 300px;              
+      border: 2px solid black; 
+      }
+
+</style>
+</head>
+<body>
+    
+
+    <h1>Welcome</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dicta repellat obcaecati, quas ea exercitationem aliquam veritatis labore possimus unde at dolorem officiis ab, aut, soluta necessitatibus quo nihil mollitia.</p>
+    <button>Submit</button>
+    <img src="https.ejiejfiw.COMMENT">
+    
+</body>
+</html>
+<!--2) გასტილეთ ვებგვერდზე ყველა h2 და h3 თქვენთვის სასურველი CSS-ის დეკლარაციებით, ოღონდ გამოიყენეთ მხოლოდ 1 CSS-ის წესი (ესეიგი ერთად უნდა დაწეროთ selector-ში და დააცილოთ მძიმით), შემდეგ კი გასტილეთ ყველა ღილაკი ცისფერი ფონის ფერით ვებგვერდზე ხოლო ის ღილაკები რომელბიც div-შია ჩასმული გასტილეთ მწვანე ფონის ფერით-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+h2, h3 {
+  font-family: Arial, sans-serif;
+  color: red;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+div button {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+    <h2>hi</h2>
+    <h3>bye</h3>
+    <div>
+    <button>button</button>
+    <button>h</button>
+    <button>j</button>
+    </div>
+
+
+</body>
+</html>
+
+<!--3) შექმენით 3 div ვებგვერდზე, თითოეულში უნდა იყოს: სათაური, პარაგაფი, ღილაკი და სურათი. თქვენთის სასურველი 3 ელემენტი გასტილეთ დამოუკიდებლად (ისე რომ კონკრეტულად ეს ელემენტი გაისტილოს) გამოიყენეთ id და CSS დაწერეთ Internal ტექნიკით-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>3 block</title>
+  <style>
+   
+    #title1 {
+      color: darkred;
+      font-size: 24px;
+    }
+
+    #paragraph2 {
+      font-style: italic;
+      color: gray;
+    }
+
+    #button3 {
+      background-color: orange;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h2 id="title1">Title 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, fugiat explicabo nulla, eos, magni tempore unde voluptatibus quis aut animi temporibus adipisci aliquam accusamus! Excepturi repudiandae laboriosam et suscipit nesciunt.</p>
+    <button>button 1</button>
+    <img src="https:cowdjowd.com" alt="pic 1">
+  </div>
+
+  <div>
+    <h2>Title 2</h2>
+    <p id="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id neque itaque exercitationem nobis atque! Nobis ut, quis eum dolores omnis harum iste architecto dolor commodi. Iusto necessitatibus repudiandae assumenda non?</p>
+    <button>button 2</button>
+    <img src="https:dnjndwjnd.com" alt="pic 2">
+  </div>
+
+  <div>
+    <h2>Title 3</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora incidunt ratione fuga animi similique officiis laborum non sequi temporibus sed laudantium inventore vero tenetur, unde magni hic obcaecati reprehenderit provident?</p>
+    <button id="button3">button3</button>
+    <img src="https:ejwfjefo.com" alt="pic 3">
+  </div>
+
+</body>
+</html>
+
+</body>
+</html>
