@@ -1,0 +1,107 @@
+<!--2) შექმენით 5 პარაგრაფი, თითოეულში ჩაწერეთ რომელიმე ფერი და გასტილეთ ამავე ფერით id selector-ის საშვალებით, გამოიყენეთ internal css-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+    
+    #blue {
+      color: blue;
+    }
+
+    #red {
+      color: red;
+    }
+
+    #green {
+      color: green;
+    }
+
+    #purple {
+      color: purple;
+    }
+
+    #orange {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+    <p id="blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quaerat maiores repudiandae corrupti ipsum quam dolor saepe et, modi accusantium eius quidem vero aliquam perspiciatis suscipit atque nemo veniam debitis.</p>
+    <p id="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima possimus officiis ea. Aliquam ratione rem enim eos iusto maxime, aliquid blanditiis quidem corrupti nostrum aut. Est beatae expedita maiores repudiandae?</p>
+    <p id="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis quaerat, pariatur excepturi repellat culpa enim iure sequi sit. Pariatur, iste quasi ullam dolores perspiciatis nostrum assumenda quisquam hic id.</p>
+    <p id="purple">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex hic reprehenderit optio quod, possimus doloribus, exercitationem rem nam itaque maiores sint consequuntur cum? Explicabo quod non ullam, eveniet pariatur ducimus.</p>4
+    <p id="orange">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nam, esse repellat quia cumque impedit! Reiciendis iste eaque sapiente quisquam nam expedita ullam, consectetur ipsa, quae amet doloremque exercitationem dolorum.</p>
+</body>
+</html>
+
+<!--3) შექმენით სათაური, პარაგრაფი, ღილაკი და კიდევ რამდენიმე ელემენტი. ყველა გასტილეთ ერთიანად class სელექტორის საშვალებით-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .styled {
+      font-family: "Arial", sans-serif;
+      color: white;
+      background-color: green;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="styled">H1</h1>
+  <p class="styled">Paragraph</p>
+  <button class="styled">Button</button>
+  <div class="styled">Div</div>
+  <label class="styled">Label</label>
+
+</body>
+</html>
+
+<!--4) თქვენის სიტყვებით ახსენით და კომენტარებით დაწერეთ CSS specificity (ბრაუზერის ალგორითმი რომელიც პრიორიტეტების მიხედვით ანიჭებს ელემენტებს სტილს) მოიყვანეთ 4-ივე შემთხვევის მაგალითი-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Specificity Example</title>
+  <style>
+    p {
+      color: blue;
+    }
+   
+    .text {
+      color: green; 
+    }
+
+ 
+    #important {
+      color: red; 
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <p>Element</p>
+
+  <p class="text">Class.</p>
+  
+  <p id="important" class="text">ID selector</p>
+
+  <p id="important" class="text" style="color: black;">Inline</p>
+
+</body>
+</html>

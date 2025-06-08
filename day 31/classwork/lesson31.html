@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .section1 {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .section2 {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .section3 {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    #red-heading {
+      color: red;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section1">
+    <h2>First Section</h2>
+    <button>Click Me</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus, aspernatur quaerat labore voluptatibus dolor, eligendi minima rem odit vitae natus dolore molestiae ipsa officiis suscipit, obcaecati qui nihil. Praesentium!</p>
+  </div>
+
+  <div class="section2">
+    <h2 id="red-heading">Second Section</h2>
+    <button>Click Me</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut expedita corrupti in, praesentium aspernatur provident tempore tenetur facere, temporibus ab eaque illum dolore labore! Voluptates mollitia dolorum similique cumque molestiae?.</p>
+  </div>
+
+  <div class="section3">
+    <h2>Third Section</h2>
+    <button>Click Me</button>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed autem earum dicta voluptatum quis minima inventore! Vitae nam ducimus corporis, pariatur consectetur harum perferendis hic, assumenda ut qui in culpa..</p>
+  </div>
+
+</body>
+</html>
+
+<!--2) კომენტარებით დაწერეთ CSS-ის სხვადსხვა წესების სელექტორად იგივე ელემენტი როდესაც გვაქვს რომელი სტილი იმარჯვებს, რომელი სელექტორია ყველაზე პრიორიტეტული. მოიყვანეთ ყველა დონის მაგალითი-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    /* 1 ტიპის (ტეგის) სელექტორი – ყველაზე დაბალი პრიორიტეტი */
+    p {
+      color: blue; /* ეს დაიჩაგრება უფრო ძლიერის შემთხვევაში */
+    }
+
+    /* 2 კლასი – საშუალო პრიორიტეტი */
+    .highlight {
+      color: green;
+    }
+
+    /* 3 ID – მაღალი პრიორიტეტი */
+    #special {
+      color: red;
+    }
+
+    /* 4 Inline სტილი – ყველაზე მაღალი პრიორიტეტი */
+    /* ეს დაწერილია პირდაპირ HTML-ში: style="color: orange" */
+
+    /* 5 !important – გადაფარავს ყველას, მიუხედავად სხვა წესებისა */
+    .force {
+      color: purple !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ტიპის (ტეგის) დონე – აქ მხოლოდ p მუშაობს -->
+  <p>This will be blue because only the tag selector applies.</p>
+
+  <!-- კლასი აქვს – მწვანე დაიმორჩილებს ტიპს -->
+  <p class="highlight">This will be green, because class wins over tag.</p>
+
+  <!-- ID აქვს – წითელი დაიმორჩილებს კლასსაც -->
+  <p id="special">This will be red, because ID wins over class and tag.</p>
+
+  <!-- Inline სტილი – ყველაზე ძლიერია ჩვეულებრივ წესებში -->
+  <p style="color: orange;">This will be orange</p>
+
+  <!-- !important – უძლიერესი, ყველაფერს ეჯიბრება -->
+  <p class="force" style="color: orange;">This will be purple.</p>
+
+</body>
+</html>
